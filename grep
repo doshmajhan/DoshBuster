@@ -1,0 +1,42 @@
+--2016-02-06 02:48:55--  http://(windows/
+Resolving (windows ((windows)... failed: Name or service not known.
+wget: unable to resolve host address ‘(windows’
+--2016-02-06 02:48:55--  http://nt/
+Resolving nt (nt)... failed: Name or service not known.
+wget: unable to resolve host address ‘nt’
+--2016-02-06 02:48:55--  http://6.1;/
+Resolving 6.1; (6.1;)... failed: Name or service not known.
+wget: unable to resolve host address ‘6.1;’
+--2016-02-06 02:48:55--  http://wow64)/
+Resolving wow64) (wow64))... failed: Name or service not known.
+wget: unable to resolve host address ‘wow64)’
+--2016-02-06 02:48:55--  http://applewebkit/537.36
+Resolving applewebkit (applewebkit)... failed: Name or service not known.
+wget: unable to resolve host address ‘applewebkit’
+--2016-02-06 02:48:55--  http://(khtml,/
+Resolving (khtml, ((khtml,)... failed: Name or service not known.
+wget: unable to resolve host address ‘(khtml,’
+--2016-02-06 02:48:55--  http://like/
+Resolving like (like)... 127.0.53.53
+Connecting to like (like)|127.0.53.53|:80... failed: Connection refused.
+--2016-02-06 02:48:55--  http://gecko)/
+Resolving gecko) (gecko))... failed: Name or service not known.
+wget: unable to resolve host address ‘gecko)’
+--2016-02-06 02:48:55--  http://chrome/48.0.2564.82
+Resolving chrome (chrome)... 127.0.53.53
+Connecting to chrome (chrome)|127.0.53.53|:80... failed: Connection refused.
+--2016-02-06 02:48:55--  http://safari/537.36
+Resolving safari (safari)... failed: Name or service not known.
+wget: unable to resolve host address ‘safari’
+--2016-02-06 02:48:55--  http://opr/35.0.2066.37
+Resolving opr (opr)... failed: Name or service not known.
+wget: unable to resolve host address ‘opr’
+--2016-02-06 02:48:55--  http://ctf.arch-cloud.com/e_commerce
+Resolving ctf.arch-cloud.com (ctf.arch-cloud.com)... 52.91.158.50
+Connecting to ctf.arch-cloud.com (ctf.arch-cloud.com)|52.91.158.50|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2016-02-06 02:48:55 ERROR 404: Not Found.
+
+--2016-02-06 02:48:55--  http://200%5C%7Cok/
+Resolving 200\\|ok (200\\|ok)... failed: Name or service not known.
+wget: unable to resolve host address ‘200\\|ok’
