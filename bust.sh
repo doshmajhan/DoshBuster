@@ -1,10 +1,25 @@
-filename='test.list'
-site='ctf.arch-cloud.com'
-agent='Mozilla/5.0 (Macintosh; Intel Mac OS x 10_6_8) AppleWebKit/534.30 (KHTML, like Gecko)
-Chrome/12.0.742.112 Safari/534.30'
-echo Starting DoshBuster
-while read p; do
-    echo $p
-done < $filename
+# Dirbuster written in bash
+# Doshmajhan
 
-wget $site | echo
+filename='dir.list'
+output='out.file'
+site='ctf.arch-cloud.com/'
+agent='Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko)
+Chrome/48.0.2564.82 Safari/537.36 OPR/35.0.2066.37'
+echo Starting Doshbuster
+
+getpage(){
+    temp=$site$1
+    if [ "$(wget --header="Accept: text/html" --user-agent=$agent "$temp" 2>&1 | grep -c "200 OK")" -gt 0 ]; then
+        echo $1 >> $output
+        echo found $1
+    fi
+}
+
+while read p; do
+    while [ `jobs | wc -l` -ge 50 ] 
+    do
+        sleep 5
+    done
+    getpage $p &    
+done < $filename
