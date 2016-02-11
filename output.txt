@@ -1,0 +1,211 @@
+++ filename=test.list
+++ output=out.file
+++ site=ctf.arch-cloud.com/
+++ agent='User-Agent: Mozilla/5.0 (X11; Ubuntu; Linx x86_64; rv:44.0) Gecko/20100101 Firefox/44.0'
+++ echo Starting Doshbuster
+Starting Doshbuster
+++ main ctf.arch-cloud.com/
+++ read p
++++ jobs
++++ wc -l
+++ '[' 0 -ge 50 ']'
+++ read p
+++ getpage index.html ctf.arch-cloud.com/
+++ temp=ctf.arch-cloud.com/index.html/
+++ echo ctf.arch-cloud.com/index.html/
+ctf.arch-cloud.com/index.html/
++++ jobs
++++ wc -l
++++ wget '--header=Accept: text/html' --user-agent=User-Agent: Mozilla/5.0 '(X11;' 'Ubuntu;' Linx 'x86_64;' 'rv:44.0)' Gecko/20100101 Firefox/44.0 ctf.arch-cloud.com/index.html/
++++ egrep -c '200 OK|403 Forbidden'
+++ '[' 1 -ge 50 ']'
+++ read p
+++ getpage admin ctf.arch-cloud.com/
+++ temp=ctf.arch-cloud.com/admin/
+++ echo ctf.arch-cloud.com/admin/
+ctf.arch-cloud.com/admin/
++++ jobs
++++ wc -l
++++ wget '--header=Accept: text/html' --user-agent=User-Agent: Mozilla/5.0 '(X11;' 'Ubuntu;' Linx 'x86_64;' 'rv:44.0)' Gecko/20100101 Firefox/44.0 ctf.arch-cloud.com/admin/
++++ egrep -c '200 OK|403 Forbidden'
+++ '[' 2 -ge 50 ']'
+++ read p
+++ getpage www ctf.arch-cloud.com/
+++ temp=ctf.arch-cloud.com/www/
+++ echo ctf.arch-cloud.com/www/
+ctf.arch-cloud.com/www/
++++ jobs
++++ wc -l
++++ egrep -c '200 OK|403 Forbidden'
++++ wget '--header=Accept: text/html' --user-agent=User-Agent: Mozilla/5.0 '(X11;' 'Ubuntu;' Linx 'x86_64;' 'rv:44.0)' Gecko/20100101 Firefox/44.0 ctf.arch-cloud.com/www/
+++ '[' 3 -ge 50 ']'
+++ read p
+++ getpage apache2 ctf.arch-cloud.com/
+++ temp=ctf.arch-cloud.com/apache2/
+++ echo ctf.arch-cloud.com/apache2/
+ctf.arch-cloud.com/apache2/
++++ jobs
++++ wc -l
++++ wget '--header=Accept: text/html' --user-agent=User-Agent: Mozilla/5.0 '(X11;' 'Ubuntu;' Linx 'x86_64;' 'rv:44.0)' Gecko/20100101 Firefox/44.0 ctf.arch-cloud.com/apache2/
++++ egrep -c '200 OK|403 Forbidden'
+++ '[' 4 -ge 50 ']'
+++ read p
+++ getpage users ctf.arch-cloud.com/
+++ temp=ctf.arch-cloud.com/users/
+++ echo ctf.arch-cloud.com/users/
+ctf.arch-cloud.com/users/
++++ jobs
++++ wc -l
+++ '[' 5 -ge 50 ']'
+++ read p
++++ wget '--header=Accept: text/html' --user-agent=User-Agent: Mozilla/5.0 '(X11;' 'Ubuntu;' Linx 'x86_64;' 'rv:44.0)' Gecko/20100101 Firefox/44.0 ctf.arch-cloud.com/users/
+++ getpage tmp ctf.arch-cloud.com/
+++ temp=ctf.arch-cloud.com/tmp/
+++ echo ctf.arch-cloud.com/tmp/
+ctf.arch-cloud.com/tmp/
++++ egrep -c '200 OK|403 Forbidden'
++++ jobs
++++ wc -l
++++ egrep -c '200 OK|403 Forbidden'
+++ '[' 6 -ge 50 ']'
++++ wget '--header=Accept: text/html' --user-agent=User-Agent: Mozilla/5.0 '(X11;' 'Ubuntu;' Linx 'x86_64;' 'rv:44.0)' Gecko/20100101 Firefox/44.0 ctf.arch-cloud.com/tmp/
+++ read p
+++ echo done main
+done main
+++ exit 0
+++ getpage e_commerce ctf.arch-cloud.com/
+++ temp=ctf.arch-cloud.com/e_commerce/
+++ echo ctf.arch-cloud.com/e_commerce/
+ctf.arch-cloud.com/e_commerce/
++++ egrep -c '200 OK|403 Forbidden'
++++ wget '--header=Accept: text/html' --user-agent=User-Agent: Mozilla/5.0 '(X11;' 'Ubuntu;' Linx 'x86_64;' 'rv:44.0)' Gecko/20100101 Firefox/44.0 ctf.arch-cloud.com/e_commerce/
+++ '[' 0 -gt 0 ']'
+++ '[' 1 -gt 0 ']'
+++ echo done page
+++ echo found ctf.arch-cloud.com/admin/
+done page
+found ctf.arch-cloud.com/admin/
+++ exit 0
+++ main ctf.arch-cloud.com/admin/
+++ read p
+++ '[' 0 -gt 0 ']'
+++ echo done page
+done page
+++ exit 0
++++ jobs
++++ wc -l
+++ '[' 0 -gt 0 ']'
+++ echo done page
+done page
+++ exit 0
+++ '[' 0 -gt 0 ']'
+++ echo done page
+done page
+++ exit 0
+++ '[' 0 -ge 50 ']'
+++ read p
+++ getpage index.html ctf.arch-cloud.com/admin/
+++ temp=ctf.arch-cloud.com/admin/index.html/
+++ echo ctf.arch-cloud.com/admin/index.html/
+ctf.arch-cloud.com/admin/index.html/
++++ jobs
++++ wc -l
+++ '[' 0 -gt 0 ']'
+++ echo done page
+done page
+++ exit 0
++++ wget '--header=Accept: text/html' --user-agent=User-Agent: Mozilla/5.0 '(X11;' 'Ubuntu;' Linx 'x86_64;' 'rv:44.0)' Gecko/20100101 Firefox/44.0 ctf.arch-cloud.com/admin/index.html/
++++ egrep -c '200 OK|403 Forbidden'
+++ '[' 1 -ge 50 ']'
+++ read p
+++ getpage admin ctf.arch-cloud.com/admin/
+++ temp=ctf.arch-cloud.com/admin/admin/
+++ echo ctf.arch-cloud.com/admin/admin/
+ctf.arch-cloud.com/admin/admin/
+++ '[' 0 -gt 0 ']'
+++ echo done page
+done page
+++ exit 0
++++ jobs
++++ wc -l
++++ wget '--header=Accept: text/html' --user-agent=User-Agent: Mozilla/5.0 '(X11;' 'Ubuntu;' Linx 'x86_64;' 'rv:44.0)' Gecko/20100101 Firefox/44.0 ctf.arch-cloud.com/admin/admin/
++++ egrep -c '200 OK|403 Forbidden'
+++ '[' 2 -ge 50 ']'
+++ read p
+++ getpage www ctf.arch-cloud.com/admin/
+++ temp=ctf.arch-cloud.com/admin/www/
+++ echo ctf.arch-cloud.com/admin/www/
+ctf.arch-cloud.com/admin/www/
++++ jobs
++++ wc -l
++++ wget '--header=Accept: text/html' --user-agent=User-Agent: Mozilla/5.0 '(X11;' 'Ubuntu;' Linx 'x86_64;' 'rv:44.0)' Gecko/20100101 Firefox/44.0 ctf.arch-cloud.com/admin/www/
++++ egrep -c '200 OK|403 Forbidden'
+++ '[' 3 -ge 50 ']'
+++ read p
+++ getpage apache2 ctf.arch-cloud.com/admin/
+++ temp=ctf.arch-cloud.com/admin/apache2/
+++ echo ctf.arch-cloud.com/admin/apache2/
+ctf.arch-cloud.com/admin/apache2/
++++ wc -l
++++ jobs
++++ wget '--header=Accept: text/html' --user-agent=User-Agent: Mozilla/5.0 '(X11;' 'Ubuntu;' Linx 'x86_64;' 'rv:44.0)' Gecko/20100101 Firefox/44.0 ctf.arch-cloud.com/admin/apache2/
++++ egrep -c '200 OK|403 Forbidden'
+++ '[' 4 -ge 50 ']'
+++ read p
++++ wc -l
+++ getpage users ctf.arch-cloud.com/admin/
++++ jobs
+++ temp=ctf.arch-cloud.com/admin/users/
+++ echo ctf.arch-cloud.com/admin/users/
+ctf.arch-cloud.com/admin/users/
++++ egrep -c '200 OK|403 Forbidden'
+++ '[' 5 -ge 50 ']'
++++ wget '--header=Accept: text/html' --user-agent=User-Agent: Mozilla/5.0 '(X11;' 'Ubuntu;' Linx 'x86_64;' 'rv:44.0)' Gecko/20100101 Firefox/44.0 ctf.arch-cloud.com/admin/users/
+++ read p
++++ jobs
++++ wc -l
+++ getpage tmp ctf.arch-cloud.com/admin/
+++ temp=ctf.arch-cloud.com/admin/tmp/
+++ echo ctf.arch-cloud.com/admin/tmp/
+ctf.arch-cloud.com/admin/tmp/
++++ egrep -c '200 OK|403 Forbidden'
++++ wget '--header=Accept: text/html' --user-agent=User-Agent: Mozilla/5.0 '(X11;' 'Ubuntu;' Linx 'x86_64;' 'rv:44.0)' Gecko/20100101 Firefox/44.0 ctf.arch-cloud.com/admin/tmp/
+++ '[' 0 -gt 0 ']'
+++ echo done page
+done page
+++ exit 0
+++ '[' 6 -ge 50 ']'
+++ read p
+++ echo done main
+done main
+++ exit 0
+++ '[' 0 -gt 0 ']'
+++ echo done page
+done page
+++ exit 0
+++ getpage e_commerce ctf.arch-cloud.com/admin/
+++ temp=ctf.arch-cloud.com/admin/e_commerce/
+++ echo ctf.arch-cloud.com/admin/e_commerce/
+ctf.arch-cloud.com/admin/e_commerce/
++++ wget '--header=Accept: text/html' --user-agent=User-Agent: Mozilla/5.0 '(X11;' 'Ubuntu;' Linx 'x86_64;' 'rv:44.0)' Gecko/20100101 Firefox/44.0 ctf.arch-cloud.com/admin/e_commerce/
+++ '[' 0 -gt 0 ']'
+++ echo done page
+done page
+++ exit 0
++++ egrep -c '200 OK|403 Forbidden'
+++ '[' 0 -gt 0 ']'
+++ echo done page
+done page
+++ exit 0
+++ '[' 0 -gt 0 ']'
+++ echo done page
+done page
+++ exit 0
+++ '[' 0 -gt 0 ']'
+++ echo done page
+done page
+++ exit 0
+++ '[' 0 -gt 0 ']'
+++ echo done page
+done page
+++ exit 0
